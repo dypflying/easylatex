@@ -11,9 +11,8 @@ weight: 30
 
 {{% blocks/section color="default" %}}
 
-# Privacy Policy
+## Issue Dates:
 
-Privacy Policy
 - Effective Date: April 23, 2025
 - Last Updated: April 23, 2025
 ** **
