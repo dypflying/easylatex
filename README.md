@@ -1,4 +1,4 @@
-# Docsy Example
+# EasyLaTeX/EasyLaTeX Pro
 
 
 EasyLaTeX is a free powerful mathematical formula recognition tool which can convert handwritten or printed formulas into LaTeX codes with preview images.  
@@ -14,19 +14,13 @@ EasyLaTeX is completely free, requires no user registration, and can be used wit
  - Support for 9 languages(English, German, French, Spanish, Portuguese, Simplified Chinese, Traditional Chinese, Japanese, Korean)
  - Support for previewing with various fonts.  
 
-{.-text-yellow}
-{{% /blocks/section %}}
+ ## About the Backend Model
+
+The backend mathematical formula recognition model used by EasyLaTeX was fine-tuned based on an open-source model, and we are continuously optimizing the model parameters to improve its inference performance (such as accuracy, response time, etc.). However, the inference tasks of the model are still executed on our servers' CPUs, and since you probably know that CPU's computing power is far lower than GPU's, so you may get relatively slow responses for formula OCR tasks with EasyLaTeX. Currently the EasyLaTeX's timeout setting for the formula image OCR is 90 seconds, but per our testing result, most formula OCR tasks can be completed within 15 seconds.  
 
 
-{{% blocks/section type="row" %}}
+## Differences between EasyLaTeX and EasyLaTeX Pro
 
-{{% blocks/feature icon="fa-download" title="Install" %}}
-Install [IOS APP](http://placeholder/ios_release/)
-{{% /blocks/feature %}}
+The main differences between EasyLaTeX and EasyLaTeX Pro lie in the backend models' parameter size and the running hardware for inference tasks. EasyLaTeX executes inference tasks on CPU, while EasyLaTeX Pro uses GPU, so EasyLaTeX Pro has faster response, hence a relatively better user experience. Additionally, the size of the EasyLaTeX Pro's model is about 40% larger than the size of EasyLaTeX's model, resulting in slightly higher accuracy than EasyLaTeX.  
 
-{{% blocks/feature icon="fab fa-github" title="Github!" %}}
-Notifications for new releases, submit issues. [Github](https://github.com/dypflying/easylatex)
-{{% /blocks/feature %}}
-
-{{% blocks/feature icon="fa fa-envelope" title="Email" url="mailto:yunpeng_deng@sina.com" %}}
-yunpeng_deng@sina.com
+In terms of functionalities, EasyLaTeX and EasyLaTeX Pro are completely identical.  
